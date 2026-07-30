@@ -20,3 +20,9 @@ public void act(int direction) {
 
 
 The act() method is called from the Board class. It is used to position an alien in horizontal direction.
+
+
+public Bomb getBomb() {
+
+    return bomb;
+}
