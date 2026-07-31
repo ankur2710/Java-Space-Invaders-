@@ -26,3 +26,6 @@ public Bomb getBomb() {
 
     return bomb;
 }
+
+
+These are the initial coordinates of the player sprite.
