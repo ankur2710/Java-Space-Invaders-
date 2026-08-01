@@ -95,3 +95,16 @@ private void drawBombing(Graphics g) {
 
 
 The drawBombing() method draws bombs launched by the aliens. 
+
+
+if (inGame) {
+
+    g.drawLine(0, Commons.GROUND,
+            Commons.BOARD_WIDTH, Commons.GROUND);
+
+    drawAliens(g);
+    drawPlayer(g);
+    drawShot(g);
+    drawBombing(g);
+
+} 
