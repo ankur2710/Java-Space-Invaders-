@@ -74,3 +74,6 @@ private void gameInit() {
     player = new Player();
     shot = new Shot();
 }
+
+
+In the gameInit() method we create 24 aliens. The alien image size is 12x12px. We put 6px space among the aliens. We also create the player and the shot objects. VisualArt & Design
