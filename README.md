@@ -108,3 +108,5 @@ if (inGame) {
     drawBombing(g);
 
 } 
+
+Inside the doDrawing() method, we draw the ground, the aliens, the player, the shot, and the bombs.
