@@ -77,3 +77,18 @@ private void gameInit() {
 
 
 In the gameInit() method we create 24 aliens. The alien image size is 12x12px. We put 6px space among the aliens. We also create the player and the shot objects. VisualArt & Design
+
+
+
+private void drawBombing(Graphics g) {
+
+    for (Alien a : aliens) {
+
+        Alien.Bomb b = a.getBomb();
+
+        if (!b.isDestroyed()) {
+
+            g.drawImage(b.getImage(), b.getX(), b.getY(), this);
+        }
+    }
+}
