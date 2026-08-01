@@ -54,3 +54,5 @@ public void keyReleased(KeyEvent e) {
         dx = 0;
     }
 }
+
+The main logic of the  game is located in the Board class.
