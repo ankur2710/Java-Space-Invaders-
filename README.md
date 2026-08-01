@@ -92,3 +92,6 @@ private void drawBombing(Graphics g) {
         }
     }
 }
+
+
+The drawBombing() method draws bombs launched by the aliens. 
