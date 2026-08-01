@@ -56,3 +56,21 @@ public void keyReleased(KeyEvent e) {
 }
 
 The main logic of the  game is located in the Board class.
+
+
+private void gameInit() {
+
+    aliens = new ArrayList<>();
+
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 6; j++) {
+
+            var alien = new Alien(Commons.ALIEN_INIT_X + 18 * j,
+                    Commons.ALIEN_INIT_Y + 18 * i);
+            aliens.add(alien);
+        }
+    }
+
+    player = new Player();
+    shot = new Shot();
+}
