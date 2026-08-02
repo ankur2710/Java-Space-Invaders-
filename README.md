@@ -121,3 +121,4 @@ private void update() {
         message = "Game won!";
     }
 ...
+Inside the update() method we check the number of destroyed aliens. If we destroy all aliens, we win the game. 
