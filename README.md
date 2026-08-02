@@ -110,3 +110,14 @@ if (inGame) {
 } 
 
 Inside the doDrawing() method, we draw the ground, the aliens, the player, the shot, and the bombs.
+
+
+private void update() {
+
+    if (deaths == Commons.NUMBER_OF_ALIENS_TO_DESTROY) {
+
+        inGame = false;
+        timer.stop();
+        message = "Game won!";
+    }
+...
