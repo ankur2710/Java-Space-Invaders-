@@ -171,3 +171,4 @@ Iterator<Alien> it = aliens.iterator();
             alien.act(direction);
         }
     }
+This code moves aliens. If they reach the bottom, the invasion begins.
