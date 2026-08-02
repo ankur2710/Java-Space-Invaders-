@@ -122,3 +122,17 @@ private void update() {
     }
 ...
 Inside the update() method we check the number of destroyed aliens. If we destroy all aliens, we win the game. 
+
+if (alien.isVisible() && shot.isVisible()) {
+    if (shotX >= (alienX)
+            && shotX <= (alienX + Commons.ALIEN_WIDTH)
+            && shotY >= (alienY)
+            && shotY <= (alienY + Commons.ALIEN_HEIGHT)) {
+
+        var ii = new ImageIcon(explImg);
+        alien.setImage(ii.getImage());
+        alien.setDying(true);
+        deaths++;
+        shot.die();
+    }
+}
