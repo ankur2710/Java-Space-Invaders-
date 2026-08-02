@@ -151,3 +151,5 @@ if (x >= Commons.BOARD_WIDTH - Commons.BORDER_RIGHT && direction != -1) {
         a2.setY(a2.getY() + Commons.GO_DOWN);
     }
 }
+
+If the aliens reach the right end of the Board, they move down and change their direction to the left. 
