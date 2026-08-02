@@ -153,3 +153,21 @@ if (x >= Commons.BOARD_WIDTH - Commons.BORDER_RIGHT && direction != -1) {
 }
 
 If the aliens reach the right end of the Board, they move down and change their direction to the left. 
+Iterator<Alien> it = aliens.iterator();
+
+    while (it.hasNext()) {
+
+        Alien alien = it.next();
+
+        if (alien.isVisible()) {
+
+            int y = alien.getY();
+
+            if (y > Commons.GROUND - Commons.ALIEN_HEIGHT) {
+                inGame = false;
+                message = "Invasion!";
+            }
+
+            alien.act(direction);
+        }
+    }
