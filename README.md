@@ -139,3 +139,15 @@ if (alien.isVisible() && shot.isVisible()) {
 
 
 If the shot triggered by the player collides with an alien, the alien ship is destroyed. More precisely, the dying flag is set. We use it to display an explosion. The deaths variable increases and the shot sprite is destroyed.
+if (x >= Commons.BOARD_WIDTH - Commons.BORDER_RIGHT && direction != -1) {
+
+    direction = -1;
+
+    Iterator<Alien> i1 = aliens.iterator();
+
+    while (i1.hasNext()) {
+
+        Alien a2 = i1.next();
+        a2.setY(a2.getY() + Commons.GO_DOWN);
+    }
+}
