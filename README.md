@@ -204,3 +204,5 @@ public void keyReleased(KeyEvent e) {
 
     player.keyReleased(e);
 }
+
+The actual processing of this particular KeyEvent is delegated to the player sprite.
