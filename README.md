@@ -196,3 +196,7 @@ if (!bomb.isDestroyed()) {
         bomb.setDestroyed(true);
     }
 }
+
+
+If the bomb is not destroyed, it goes 1 px to the ground. If it hits the bottom, the destroyed flag is set. The alien is now ready to drop another bomb.
+
