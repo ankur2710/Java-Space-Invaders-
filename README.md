@@ -172,3 +172,13 @@ Iterator<Alien> it = aliens.iterator();
         }
     }
 This code moves aliens. If they reach the bottom, the invasion begins.
+
+int shot = generator.nextInt(15);
+Alien.Bomb bomb = alien.getBomb();
+
+if (shot == Commons.CHANCE && alien.isVisible() && bomb.isDestroyed()) {
+
+    bomb.setDestroyed(false);
+    bomb.setX(alien.getX());
+    bomb.setY(alien.getY());
+}
