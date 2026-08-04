@@ -212,3 +212,8 @@ The actual processing of this particular KeyEvent is delegated to the player spr
 
 <img width="358" height="350" alt="image" src="https://github.com/user-attachments/assets/9a317c0a-52bb-43e6-ac0b-782b904da5f5" />
 
+
+
+
+
+Figure: Space Invaders
