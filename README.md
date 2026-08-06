@@ -216,4 +216,9 @@ The actual processing of this particular KeyEvent is delegated to the player spr
 
 
 
+Figure: Space Invaders
+
+
+
+In this part of the  Java  games tutorial, we have created Space Invaders. 
 
