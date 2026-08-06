@@ -196,4 +196,24 @@ if (!bomb.isDestroyed()) {
     }
 }
 
+If the bomb is not destroyed, it goes 1 px to the ground. If it hits the bottom, the destroyed flag is set. The alien is now ready to drop another bomb.
+
+public void keyReleased(KeyEvent e) {
+
+    player.keyReleased(e);
+}
+
+The actual processing of this particular KeyEvent is delegated to the player sprite.
+
+
+
+
+<img width="358" height="350" alt="image" src="https://github.com/user-attachments/assets/9a317c0a-52bb-43e6-ac0b-782b904da5f5" />
+
+
+
+
+
+
+
 
