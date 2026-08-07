@@ -29,3 +29,16 @@ public class Alien extends Sprite {
         this.x += direction;
     }
 
+ public Bomb getBomb() {
+
+        return bomb;
+    }
+
+    public class Bomb extends Sprite {
+
+        private boolean destroyed;
+
+        public Bomb(int x, int y) {
+
+            initBomb(x, y);
+        }
