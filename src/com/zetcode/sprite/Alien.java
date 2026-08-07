@@ -42,3 +42,14 @@ public class Alien extends Sprite {
 
             initBomb(x, y);
         }
+    private void initBomb(int x, int y) {
+
+            setDestroyed(true);
+
+            this.x = x;
+            this.y = y;
+
+            var bombImg = "src/images/bomb.png";
+            var ii = new ImageIcon(bombImg);
+            setImage(ii.getImage());
+        }
