@@ -41,3 +41,17 @@ public void act() {
             x = Commons.BOARD_WIDTH - 2 * width;
         }
     }
+  public void keyPressed(KeyEvent e) {
+
+        int key = e.getKeyCode();
+
+        if (key == KeyEvent.VK_LEFT) {
+
+            dx = -2;
+        }
+
+        if (key == KeyEvent.VK_RIGHT) {
+
+            dx = 2;
+        }
+    }
