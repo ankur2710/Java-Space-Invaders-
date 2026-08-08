@@ -27,3 +27,17 @@ public class Player extends Sprite {
         int START_Y = 280;
         setY(START_Y);
     }
+public void act() {
+
+        x += dx;
+
+        if (x <= 2) {
+
+            x = 2;
+        }
+
+        if (x >= Commons.BOARD_WIDTH - 2 * width) {
+
+            x = Commons.BOARD_WIDTH - 2 * width;
+        }
+    }
