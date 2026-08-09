@@ -16,3 +16,6 @@ public class Shot extends Sprite {
         var shotImg = "src/images/shot.png";
         var ii = new ImageIcon(shotImg);
         setImage(ii.getImage());
+        
+        int H_SPACE = 6;
+        setX(x + H_SPACE);
