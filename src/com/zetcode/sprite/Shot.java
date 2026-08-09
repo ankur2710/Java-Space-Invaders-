@@ -19,3 +19,8 @@ public class Shot extends Sprite {
         
         int H_SPACE = 6;
         setX(x + H_SPACE);
+
+        int V_SPACE = 1;
+        setY(y - V_SPACE);
+    }
+}
