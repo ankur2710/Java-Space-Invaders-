@@ -16,3 +16,7 @@ public class Sprite {
 
         visible = true;
     }
+  public void die() {
+
+        visible = false;
+    }
