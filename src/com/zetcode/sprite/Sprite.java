@@ -33,3 +33,7 @@ public class Sprite {
 
         this.image = image;
     }
+    public Image getImage() {
+
+        return image;
+    }
