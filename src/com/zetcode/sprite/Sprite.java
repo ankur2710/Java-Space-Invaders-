@@ -25,3 +25,7 @@ public class Sprite {
 
         return visible;
     }
+       protected void setVisible(boolean visible) {
+
+        this.visible = visible;
+    }
