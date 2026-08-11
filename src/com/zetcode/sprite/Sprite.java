@@ -41,3 +41,12 @@ public class Sprite {
 
         this.x = x;
     }
+    public void setY(int y) {
+
+        this.y = y;
+    }
+
+    public int getY() {
+
+        return y;
+    }
