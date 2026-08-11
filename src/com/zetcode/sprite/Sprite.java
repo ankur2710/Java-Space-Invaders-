@@ -29,3 +29,7 @@ public class Sprite {
 
         this.visible = visible;
     }
+    public void setImage(Image image) {
+
+        this.image = image;
+    }
