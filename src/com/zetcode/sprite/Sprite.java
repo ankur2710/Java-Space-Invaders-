@@ -20,3 +20,8 @@ public class Sprite {
 
         visible = false;
     }
+ 
+    public boolean isVisible() {
+
+        return visible;
+    }
