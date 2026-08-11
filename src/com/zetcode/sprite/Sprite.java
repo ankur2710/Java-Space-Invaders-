@@ -50,3 +50,7 @@ public class Sprite {
 
         return y;
     }
+       public int getX() {
+
+        return x;
+    }
