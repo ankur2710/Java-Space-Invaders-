@@ -54,3 +54,7 @@ public class Sprite {
 
         return x;
     }
+        public void setDying(boolean dying) {
+
+        this.dying = dying;
+    }
