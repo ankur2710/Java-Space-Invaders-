@@ -58,3 +58,8 @@ public class Sprite {
 
         this.dying = dying;
     }
+     public boolean isDying() {
+
+        return this.dying;
+    }
+}
