@@ -53,4 +53,14 @@ public class Alien extends Sprite {
             var ii = new ImageIcon(bombImg);
             setImage(ii.getImage());
         }
- 
+  public void setDestroyed(boolean destroyed) {
+
+            this.destroyed = destroyed;
+        }
+
+        public boolean isDestroyed() {
+
+            return destroyed;
+        }
+    }
+}
