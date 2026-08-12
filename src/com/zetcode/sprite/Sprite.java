@@ -63,3 +63,4 @@ public class Sprite {
         return this.dying;
     }
 }
+
