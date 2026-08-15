@@ -71,4 +71,9 @@ public class Alien extends Sprite {
             this.destroyed = destroyed;
         }
 
-      
+       public boolean isDestroyed() {
+
+            return destroyed;
+        }
+    }
+} 
