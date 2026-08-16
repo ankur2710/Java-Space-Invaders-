@@ -57,3 +57,18 @@ public void keyPressed(KeyEvent e) {
         }
     }
  
+public void keyReleased(KeyEvent e) {
+
+        int key = e.getKeyCode();
+
+        if (key == KeyEvent.VK_LEFT) {
+
+            dx = 0;
+        }
+
+        if (key == KeyEvent.VK_RIGHT) {
+
+            dx = 0;
+        }
+    }
+}
