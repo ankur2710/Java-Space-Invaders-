@@ -56,3 +56,151 @@ public void keyReleased(KeyEvent e) {
     }
 }
 
+The main logic of the  game is located in the Board class.
+
+
+private void gameInit() {
+
+    aliens = new ArrayList<>();
+
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 6; j++) {
+
+            var alien = new Alien(Commons.ALIEN_INIT_X + 18 * j,
+                    Commons.ALIEN_INIT_Y + 18 * i);
+            aliens.add(alien);
+        }
+    }
+
+    player = new Player();
+    shot = new Shot();
+}
+
+
+In the gameInit() method we create 24 aliens. The alien image size is 12x12px. We put 6px space among the aliens. We also create the player and the shot objects. VisualArt & Design
+
+
+
+private void drawBombing(Graphics g) {
+
+    for (Alien a : aliens) {
+
+        Alien.Bomb b = a.getBomb();
+
+        if (!b.isDestroyed()) {
+
+            g.drawImage(b.getImage(), b.getX(), b.getY(), this);
+        }
+    }
+}
+
+
+The drawBombing() method draws bombs launched by the aliens. 
+
+
+if (inGame) {
+
+    g.drawLine(0, Commons.GROUND,
+            Commons.BOARD_WIDTH, Commons.GROUND);
+
+    drawAliens(g);
+    drawPlayer(g);
+    drawShot(g);
+    drawBombing(g);
+
+} 
+
+Inside the doDrawing() method, we draw the ground, the aliens, the player, the shot, and the bombs.
+
+
+private void update() {
+
+    if (deaths == Commons.NUMBER_OF_ALIENS_TO_DESTROY) {
+
+        inGame = false;
+        timer.stop();
+        message = "Game won!";
+    }
+...
+Inside the update() method we check the number of destroyed aliens. If we destroy all aliens, we win the game. 
+
+if (alien.isVisible() && shot.isVisible()) {
+    if (shotX >= (alienX)
+            && shotX <= (alienX + Commons.ALIEN_WIDTH)
+            && shotY >= (alienY)
+            && shotY <= (alienY + Commons.ALIEN_HEIGHT)) {
+
+        var ii = new ImageIcon(explImg);
+        alien.setImage(ii.getImage());
+        alien.setDying(true);
+        deaths++;
+        shot.die();
+    }
+}
+
+
+If the shot triggered by the player collides with an alien, the alien ship is destroyed. More precisely, the dying flag is set. We use it to display an explosion. The deaths variable increases and the shot sprite is destroyed.
+if (x >= Commons.BOARD_WIDTH - Commons.BORDER_RIGHT && direction != -1) {
+
+    direction = -1;
+
+    Iterator<Alien> i1 = aliens.iterator();
+
+    while (i1.hasNext()) {
+
+        Alien a2 = i1.next();
+        a2.setY(a2.getY() + Commons.GO_DOWN);
+    }
+}
+
+If the aliens reach the right end of the Board, they move down and change their direction to the left. 
+Iterator<Alien> it = aliens.iterator();
+
+    while (it.hasNext()) {
+
+        Alien alien = it.next();
+
+        if (alien.isVisible()) {
+
+            int y = alien.getY();
+
+            if (y > Commons.GROUND - Commons.ALIEN_HEIGHT) {
+                inGame = false;
+                message = "Invasion!";
+            }
+
+            alien.act(direction);
+        }
+    }
+This code moves aliens. If they reach the bottom, the invasion begins.
+
+int shot = generator.nextInt(15);
+Alien.Bomb bomb = alien.getBomb();
+
+if (shot == Commons.CHANCE && alien.isVisible() && bomb.isDestroyed()) {
+
+    bomb.setDestroyed(false);
+    bomb.setX(alien.getX());
+    bomb.setY(alien.getY());
+}
+
+This is the code that determines whether the alien will drop a bomb. The alien must not be destroyed; i.e. he must be visible. The bomb's destroyed flag must be set. In other words, it is the alien's first bomb dropping or the previous dropped bomb already hit the ground. If these two conditions are fulfilled, the bombing is left to the chance.
+
+
+if (!bomb.isDestroyed()) {
+
+    bomb.setY(bomb.getY() + 1);
+
+    if (bomb.getY() >= Commons.GROUND - Commons.BOMB_HEIGHT) {
+
+        bomb.setDestroyed(true);
+    }
+}
+
+If the bomb is not destroyed, it goes 1 px to the ground. If it hits the bottom, the destroyed flag is set. The alien is now ready to drop another bomb.
+
+public void keyReleased(KeyEvent e) {
+
+    player.keyReleased(e);
+}
+
