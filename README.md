@@ -204,9 +204,4 @@ public void keyReleased(KeyEvent e) {
     player.keyReleased(e);
 }
 
-   Figure: Space Invaders
-
-
-
-In this part of the  Java  games tutorial, we have created Space Invaders. 
-
+ 
