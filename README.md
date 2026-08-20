@@ -18,7 +18,10 @@ In our Java clone we have 24 invaders. These aliens heavily shell the ground. Wh
 This is the Alien sprite. Each alien has an inner Bomb class.
 
 
-  public void act(int direction) {
+       public void act(int direction) {
 
     this.x += direction;
 }
+
+
+The act() method is called from the Board class. It is used to position an alien in horizontal direction.
