@@ -29,4 +29,6 @@ The act() method is called from the Board class. It is used to position an alien
                  public Bomb getBomb() {
 
     return bomb;
-}
+}            
+
+The getBomb() method is called when the alien is about to drop a bomb.
