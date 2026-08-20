@@ -13,3 +13,6 @@ In Space Invaders game, the player controls a cannon. He is about to save the Ea
 Development of Space Invaders in Java
 
 In our Java clone we have 24 invaders. These aliens heavily shell the ground. When the player shoots a missile, he can shoot another one only when it hits an alien or the top of the Board. The player shoots with the Space key. Aliens launch randomly their bombs. Each alien shoots a bomb only after the previous one hits the bottom.
+
+
+This is the Alien sprite. Each alien has an inner Bomb class.
