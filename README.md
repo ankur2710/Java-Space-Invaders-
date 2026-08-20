@@ -16,3 +16,9 @@ In our Java clone we have 24 invaders. These aliens heavily shell the ground. Wh
 
 
 This is the Alien sprite. Each alien has an inner Bomb class.
+
+
+  public void act(int direction) {
+
+    this.x += direction;
+}
