@@ -44,3 +44,15 @@ This is the Player sprite. We control the cannon with the cursor keys.
 
 
 These are the initial coordinates of the player sprite.
+
+
+
+public void keyPressed(KeyEvent e) {
+
+    int key = e.getKeyCode();
+
+    if (key == KeyEvent.VK_LEFT) {
+
+        dx = -2;
+    }
+...
