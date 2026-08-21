@@ -41,3 +41,6 @@ This is the Player sprite. We control the cannon with the cursor keys.
 
             int START_Y = 280;
             setY(START_Y);
+
+
+These are the initial coordinates of the player sprite.
