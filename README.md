@@ -34,3 +34,10 @@ The act() method is called from the Board class. It is used to position an alien
 The getBomb() method is called when the alien is about to drop a bomb.
 
 This is the Player sprite. We control the cannon with the cursor keys. 
+
+
+           int START_X = 270;
+           setX(START_X);
+
+            int START_Y = 280;
+            setY(START_Y);
