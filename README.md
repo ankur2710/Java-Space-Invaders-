@@ -78,3 +78,16 @@ If we release the left or the right cursor, the dx variable is set to zero. The 
 
 
 The main logic of the  game is located in the Board class. 
+
+private void gameInit() {
+
+    aliens = new ArrayList<>();
+
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 6; j++) {
+
+            var alien = new Alien(Commons.ALIEN_INIT_X + 18 * j,
+                    Commons.ALIEN_INIT_Y + 18 * i);
+            aliens.add(alien);
+        }
+    }
