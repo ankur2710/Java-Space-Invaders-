@@ -57,3 +57,18 @@ public void keyPressed(KeyEvent e) {
     }
 ...
 If we press the left cursor key, the dx variable is set to -2. Next time the act() method is called, the player moves to the left.
+
+ public void keyReleased(KeyEvent e) {
+
+    int key = e.getKeyCode();
+
+    if (key == KeyEvent.VK_LEFT) {
+
+        dx = 0;
+    }
+
+    if (key == KeyEvent.VK_RIGHT) {
+
+        dx = 0;
+    }
+}
