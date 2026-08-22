@@ -91,3 +91,7 @@ private void gameInit() {
             aliens.add(alien);
         }
     }
+    
+    player = new Player();
+    shot = new Shot();
+}
