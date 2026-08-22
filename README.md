@@ -72,3 +72,6 @@ If we press the left cursor key, the dx variable is set to -2. Next time the act
         dx = 0;
     }
 }
+
+
+If we release the left or the right cursor, the dx variable is set to zero. The player sprite stops moving. 
