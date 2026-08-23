@@ -95,3 +95,5 @@ private void gameInit() {
     player = new Player();
     shot = new Shot();
 }
+
+The drawBombing() method draws bombs launched by the aliens.
