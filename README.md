@@ -102,3 +102,10 @@ if (inGame) {
 
     g.drawLine(0, Commons.GROUND,
             Commons.BOARD_WIDTH, Commons.GROUND);
+
+            drawAliens(g);
+    drawPlayer(g);
+    drawShot(g);
+    drawBombing(g);
+
+} ...
