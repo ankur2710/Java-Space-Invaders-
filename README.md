@@ -139,3 +139,5 @@ Inside the update() method we check the number of destroyed aliens. If we destro
     }
 }
 
+
+If the shot triggered by the player collides with an alien, the alien ship is destroyed. More precisely, the dying flag is set. 
