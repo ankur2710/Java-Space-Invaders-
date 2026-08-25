@@ -124,3 +124,11 @@ Inside the doDrawing() method, we draw the ground, the aliens, the player, the s
 
 
 Inside the update() method we check the number of destroyed aliens. If we destroy all aliens, we win the game.
+
+
+      if (alien.isVisible() && shot.isVisible()) {
+    if (shotX >= (alienX)
+            && shotX <= (alienX + Commons.ALIEN_WIDTH)
+            && shotY >= (alienY)
+            && shotY <= (alienY + Commons.ALIEN_HEIGHT))   
+            
