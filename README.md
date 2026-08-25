@@ -113,7 +113,7 @@ if (inGame) {
 
 Inside the doDrawing() method, we draw the ground, the aliens, the player, the shot, and the bombs.
 
-private void update() {
+    private void update() {
 
     if (deaths == Commons.NUMBER_OF_ALIENS_TO_DESTROY) 
       inGame = false;
@@ -121,3 +121,6 @@ private void update() {
         message = "Game won!";
     }
 ...
+
+
+Inside the update() method we check the number of destroyed aliens. If we destroy all aliens, we win the game.
