@@ -170,4 +170,8 @@ If the aliens reach the right end of the Board, they move down and change their 
                 inGame = false;
                 message = "Invasion!";
             }
+            
+            alien.act(direction);
+        }
+    }
 
