@@ -175,3 +175,4 @@ If the aliens reach the right end of the Board, they move down and change their 
         }
     }
 
+This code moves aliens. If they reach the bottom, the invasion begins.
