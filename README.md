@@ -155,3 +155,11 @@ If the shot triggered by the player collides with an alien, the alien ship is de
     }
     
 If the aliens reach the right end of the Board, they move down and change their direction to the left.
+    Iterator<Alien> it = aliens.iterator();
+
+    while (it.hasNext()) {
+
+        Alien alien = it.next();
+
+        if (alien.isVisible()) {
+
