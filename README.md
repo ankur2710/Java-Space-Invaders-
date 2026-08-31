@@ -185,3 +185,5 @@ This code moves aliens. If they reach the bottom, the invasion begins.
     bomb.setY(alien.getY());
     
     }
+
+This is the code that determines whether the alien will drop a bomb. The alien must not be destroyed; i.e. he must be visible.
