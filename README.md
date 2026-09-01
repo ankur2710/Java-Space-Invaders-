@@ -186,4 +186,4 @@ This code moves aliens. If they reach the bottom, the invasion begins.
     
     }
 
-This is the code that determines whether the alien will drop a bomb. The alien must not be destroyed; i.e. he must be visible.
+This is the code that determines whether the alien will drop a bomb. The alien must not be destroyed; i.e. he must be visible. The bomb's destroyed flag must be set.
