@@ -192,3 +192,7 @@ This is the code that determines whether the alien will drop a bomb. The alien m
 
        bomb.setY(bomb.getY() + 1);
          if (bomb.getY() >= Commons.GROUND - Commons.BOMB_HEIGHT) {
+         
+        bomb.setDestroyed(true);
+      }
+    }
