@@ -196,3 +196,4 @@ This is the code that determines whether the alien will drop a bomb. The alien m
         bomb.setDestroyed(true);
       }
     }
+If the bomb is not destroyed, it goes 1 px to the ground.
