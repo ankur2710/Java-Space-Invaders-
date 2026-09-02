@@ -200,4 +200,6 @@ If the bomb is not destroyed, it goes 1 px to the ground. If it hits the bottom,
 
 
              public void keyReleased(KeyEvent e) {
+             player.keyReleased(e);
+     }
 
